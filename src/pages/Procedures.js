@@ -1,8 +1,3 @@
-import Nav from "react-bootstrap/Nav";
-import { Route, Routes } from "react-router-dom";
-import { Switch, Link } from "react-router-dom";
-import render from "react-dom";
-import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import "./Procedures.css";

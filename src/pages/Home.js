@@ -1,6 +1,5 @@
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import "./Home.css";
 
@@ -12,7 +11,11 @@ export default function Home() {
         <Container fluid="xs">
           <Row xs={1} md={2} className="justify-content-xl-center">
             <Col className="col">
-              <img className="image" src={require("./skyview-toga.jpg")} />
+              <img
+                className="image"
+                alt="Saratoga Skyline"
+                src={require("./skyview-toga.jpg")}
+              />
               <p>PlaceHolder Image</p>
             </Col>
             <Col className="col">
