@@ -16,10 +16,7 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/procedures">
-              Procedures
-            </Nav.Link>
-            <Nav.Link as={Link} to="/postop">
-              Post-Op
+              Procedures/PostOp
             </Nav.Link>
             <Nav.Link as={Link} to="/billing">
               Billing

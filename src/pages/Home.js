@@ -13,6 +13,7 @@ export default function Home() {
           <Row xs={1} md={2} className="justify-content-xl-center">
             <Col className="col">
               <img className="image" src={require("./skyview-toga.jpg")} />
+              <p>PlaceHolder Image</p>
             </Col>
             <Col className="col">
               <p>
