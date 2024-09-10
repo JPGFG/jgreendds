@@ -1,3 +1,7 @@
-export default function Home() {
-  return <h1>Billing</h1>;
+export default function Billing() {
+  return (
+    <div>
+      <h1>Billing Policy, as of 2024.</h1>
+    </div>
+  );
 }
