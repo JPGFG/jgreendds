@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Directions from "./pages/Directions";
 import FAQ from "./pages/FAQ";
 import NavigationBar from "./components/NavigationBar";
+import Nondescrimination from "./components/NonDesc";
 
 function App() {
   return (
@@ -64,7 +65,7 @@ function DefaultPhotoSlider() {
 function Footer() {
   return (
     <div className="footer-plug">
-      <a href="/">Notice of Nondiscrimination</a>
+      <Nondescrimination />
       <br />
       <br />
       <footer>2024 - all rights reserved.</footer>
