@@ -68,7 +68,7 @@ function Footer() {
       <br />
       <br />
       <footer>2024 - all rights reserved.</footer>
-      <footer>Website Created and Maintained by GreaseFire</footer>
+      <footer>GreaseFire</footer>
     </div>
   );
 }
