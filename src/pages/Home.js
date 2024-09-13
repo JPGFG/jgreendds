@@ -31,12 +31,12 @@ export default function Home() {
 
 // Example hours data
 const hoursData = [
-  { day: "Monday", hours: "9:00 AM - 5:00 PM" },
-  { day: "Tuesday", hours: "9:00 AM - 5:00 PM" },
-  { day: "Wednesday", hours: "9:00 AM - 5:00 PM" },
-  { day: "Thursday", hours: "9:00 AM - 5:00 PM" },
-  { day: "Friday", hours: "9:00 AM - 5:00 PM" },
-  { day: "Saturday", hours: "10:00 AM - 4:00 PM" },
+  { day: "Monday", hours: "8:00 AM - 5:00 PM" },
+  { day: "Tuesday", hours: "8:00 AM - 5:00 PM" },
+  { day: "Wednesday", hours: "8:00 AM - 5:00 PM" },
+  { day: "Thursday", hours: "8:00 AM - 5:00 PM" },
+  { day: "Friday", hours: "Closed" },
+  { day: "Saturday", hours: "Closed" },
   { day: "Sunday", hours: "Closed" },
 ];
 
@@ -48,7 +48,7 @@ const HoursCard = () => {
         <ListGroup variant="flush">
           {hoursData.map((entry, index) => (
             <ListGroup.Item key={index}>
-              <strong>{entry.day}:</strong> {entry.hours}
+              <strong>{entry.day} </strong> {entry.hours}
             </ListGroup.Item>
           ))}
         </ListGroup>
