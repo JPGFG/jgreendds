@@ -7,24 +7,25 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <div className="window mx-auto">
-        <h1>Your Trusted Family Dentist in Saratoga Springs</h1>
-        <Container className="text-center" fluid="xs">
-          <Row xs={1} md={2} className="justify-content-xl-center">
-            <Col className="col">
-              <img
-                className="image"
-                alt="Saratoga Skyline"
-                src={require("./skyview-toga.jpg")}
-              />
-              <p>PlaceHolder Image</p>
-            </Col>
-            <Col className="justify-content-center text-center mx-auto">
-              <HoursCard />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <h1 style={{ marginTop: "2rem" }}>
+        Your Trusted Family Dentist in Saratoga Springs
+      </h1>
+
+      <Container className="text-center" fluid="xs">
+        <Row xs={1} md={2} className="justify-content-xl-center">
+          <Col className="col">
+            <img
+              className="image"
+              alt="Saratoga Skyline"
+              src={require("./skyview-toga.jpg")}
+            />
+            <p>PlaceHolder Image</p>
+          </Col>
+          <Col className="justify-content-center text-center mx-auto">
+            <HoursCard />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
