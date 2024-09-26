@@ -34,7 +34,10 @@ function App() {
 function DefaultPhotoSlider() {
   return (
     <div className="carousel-div">
-      <Carousel className="d-none d-sm-block caro">
+      <Carousel
+        className="d-none d-sm-block caro mx-auto"
+        style={{ maxHeight: "400px", maxWidth: "60rem" }}
+      >
         <Carousel.Item>
           <Image className="c-img" src={require("./dentistry.png")} />
           <Carousel.Caption>

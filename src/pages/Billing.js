@@ -1,4 +1,3 @@
-import "./Billing.css";
 import { ButtonMailto } from "../components/ButtonMailto";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -6,8 +5,8 @@ import Col from "react-bootstrap/Col";
 
 export default function Billing() {
   return (
-    <div className="billingblock">
-      <Row className="mx-auto">
+    <div className="mx-auto">
+      <Row className="mx-auto" style={{ marginTop: "2rem" }}>
         <Col>
           <BillingPolicyCard />
         </Col>
@@ -57,10 +56,7 @@ function BillingPolicyCard() {
 }
 function InsurancePolicyCard() {
   return (
-    <Card
-      className="mx-auto"
-      style={{ width: "24rem", textAlign: "center", marginTop: "2rem" }}
-    >
+    <Card className="mx-auto" style={{ width: "24rem", textAlign: "center" }}>
       <Card.Body>
         <Card.Header
           className="flex-fill mx-0"

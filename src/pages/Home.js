@@ -7,7 +7,10 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <h1 style={{ marginTop: "2rem" }}>
+      <h1
+        className="mx-auto"
+        style={{ marginTop: "2rem", marginBottom: "2rem" }}
+      >
         Your Trusted Family Dentist in Saratoga Springs
       </h1>
 
@@ -43,13 +46,20 @@ const hoursData = [
 
 const HoursCard = () => {
   return (
-    <Card className="mx-auto" style={{ width: "20rem" }}>
+    <Card className="mx-auto" style={{ width: "18rem" }}>
       <Card.Body>
         <Card.Title>Hours of Operation</Card.Title>
         <ListGroup variant="flush">
           {hoursData.map((entry, index) => (
             <ListGroup.Item key={index}>
-              <strong>{entry.day} </strong> {entry.hours}
+              <Row className="mx-0" style={{ padding: "0rem", margin: "0" }}>
+                <Col style={{ textAlign: "left" }}>
+                  <strong>{entry.day} </strong>
+                </Col>
+                <Col style={{ textAlign: "left", fontSize: "15px" }}>
+                  {entry.hours}
+                </Col>
+              </Row>
             </ListGroup.Item>
           ))}
         </ListGroup>

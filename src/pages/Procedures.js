@@ -7,7 +7,9 @@ export default function Procedures() {
   return (
     <div>
       <div>
-        <h2>Select a Tab to Learn more </h2>
+        <h1 className="mx-auto" style={{ marginTop: "2rem" }}>
+          Select a Tab{" "}
+        </h1>
       </div>
       <Interface />
     </div>

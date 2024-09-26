@@ -1,4 +1,3 @@
-import "./Billing.css";
 import Accordion from "react-bootstrap/Accordion";
 
 export default function FAQ() {

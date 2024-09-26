@@ -7,8 +7,8 @@ import "./Contact.css";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="mx-auto">
+      <h1 style={{ marginTop: "2rem" }}>Contact</h1>
       <AutoLayout />
     </div>
   );
@@ -16,8 +16,8 @@ export default function Home() {
 
 function AutoLayout() {
   return (
-    <Container className="text-center">
-      <Row className="justify-content-center">
+    <Container className="text-center mx-auto">
+      <Row className="justify-content-center" style={{ marginBottom: "2rem" }}>
         <Col />
         <Col>
           <Alert />
@@ -25,10 +25,10 @@ function AutoLayout() {
         <Col />
       </Row>
       <Row className="justify-content-center text-center mx-auto">
-        <Col>
+        <Col style={{ marginBottom: "2rem" }}>
           <MailingAddress />
         </Col>
-        <Col>
+        <Col style={{ marginBottom: "2rem" }}>
           <PhoneNumbers />
         </Col>
         <Col>
@@ -42,8 +42,10 @@ function AutoLayout() {
 function MailingAddress() {
   return (
     <Card className="mx-auto" style={{ width: "18rem", textAlign: "center" }}>
+      <Card.Header>
+        <strong style={{ textDecoration: "underline" }}>Mail</strong>
+      </Card.Header>
       <Card.Body>
-        <Card.Title>Mail</Card.Title>
         <Card.Text>
           R. Jamie Green, DDS
           <br />
@@ -59,16 +61,18 @@ function MailingAddress() {
 function PhoneNumbers() {
   return (
     <Card className="mx-auto" style={{ width: "18rem", textAlign: "center" }}>
+      <Card.Header>
+        <strong style={{ textDecoration: "underline" }}>Phone</strong>
+      </Card.Header>
       <Card.Body>
-        <Card.Title>Phone</Card.Title>
         <Card.Text>
-          Main Phone: <br />
+          <strong>Main Phone</strong> <br />
           <a href="tel:518-587-8885">(518) 587-8885</a>
           <br />
-          Billing Dept: <br />
+          <strong>Billing Dept</strong> <br />
           <a href="tel:518-587-8885">(518) 587-8885 option 2</a>
           <br />
-          Fax: <br />
+          <strong>Fax</strong> <br />
           <a href="tel:518-587-2827">(518) 587-2827</a>
         </Card.Text>
       </Card.Body>
@@ -79,15 +83,18 @@ function PhoneNumbers() {
 function EmailList() {
   return (
     <Card className="mx-auto" style={{ width: "18rem", textAlign: "center" }}>
+      <Card.Header>
+        <strong style={{ textDecoration: "underline" }}>E-Mail</strong>
+      </Card.Header>
       <Card.Body>
-        <Card.Title>E-Mail</Card.Title>
         <Card.Text>
           <ButtonMailto
             label="jamiegreendds@gmail.com"
             mailto="mailto:jamiegreendds@gmail.com"
           />
           <br />
-          Billing <br />
+          <br />
+          <strong>Billing</strong> <br />
           <ButtonMailto
             label="cindy@jamiegreendds.com"
             mailto="mailto:cindy@jamiegreendds.com"
@@ -107,12 +114,18 @@ function Alert() {
         style={{ width: "18rem" }}
         className="mb-2 mx-auto"
       >
+        <Card.Header>
+          <strong>If you are having a dental emergency</strong>
+        </Card.Header>
         <Card.Body>
-          <Card.Title>If you are having a dental emergency: </Card.Title>
           <Card.Text>
-            please CALL us, rather than contact us via email. If no one is
-            available to take your call, please leave a message. Messages will
-            be checked more frequently than email. Thank you!
+            Please <strong>CALL</strong> us, rather than contact us via email.
+            If no one is available to take your call, please leave a message.
+            Messages will be checked more frequently than email. <br />
+            Thank you! <br />
+            <a style={{ color: "white" }} href="tel:518-587-8885">
+              (518) 587-8885
+            </a>
           </Card.Text>
         </Card.Body>
       </Card>
