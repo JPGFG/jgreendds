@@ -3,7 +3,9 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
+import About from "./pages/About";
+import Tips from "./pages/Tips";
 import Home from "./pages/Home";
 import Procedures from "./pages/Procedures";
 import Billing from "./pages/Billing";
@@ -25,6 +27,8 @@ function App() {
         <Route path="/directions" element={<Directions />} />
         <Route path="/FAQs" element={<FAQ />} />
         <Route path="/procedures" element={<Procedures />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/tips" element={<Tips />} />
       </Routes>
       <Footer />
     </>
@@ -49,14 +53,18 @@ function DefaultPhotoSlider() {
           <Image className="c-img" src={require("./dentistry.png")} />
           <Carousel.Caption>
             <h3>Meet the Team</h3>
-            <Button variant="primary">About Us</Button>{" "}
+            <Button as={Link} to="/about" variant="primary">
+              About Us
+            </Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <Image className="c-img" src={require("./dentistry.png")} />
           <Carousel.Caption>
             <h3>Dr. Green's Tips for Healthy Teeth</h3>
-            <Button variant="primary">Read Here</Button>{" "}
+            <Button as={Link} to="/tips" variant="primary">
+              Read Here
+            </Button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

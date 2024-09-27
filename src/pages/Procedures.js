@@ -18,7 +18,7 @@ export default function Procedures() {
 
 function Interface() {
   return (
-    <div className="tabbers">
+    <div style={{ maxWidth: "60rem" }} className="tabbers mx-auto">
       <Tabs defaultActiveKey="extractions" id="tabber" className="mb-3" fill>
         <Tab eventKey="extractions" title="Extractions">
           <ExtractionsAccordion />

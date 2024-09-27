@@ -2,7 +2,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 export default function FAQ() {
   return (
-    <div>
+    <div className="mx-auto" style={{ maxWidth: "60rem" }}>
       <h1 style={{ marginTop: "2rem" }}>FAQs</h1>
       <FAQAccordion />
     </div>

@@ -2,19 +2,29 @@ import { ButtonMailto } from "../components/ButtonMailto";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 export default function Billing() {
   return (
-    <div className="mx-auto">
-      <Row className="mx-auto" style={{ marginTop: "4rem" }}>
-        <Col style={{ marginBottom: "2rem" }}>
-          <BillingPolicyCard />
-        </Col>
-        <Col>
-          <InsurancePolicyCard />
-        </Col>
-      </Row>
-    </div>
+    <>
+      <h1
+        className="mx-auto"
+        style={{ marginTop: "2rem", marginBottom: "2rem" }}
+      >
+        Billing
+      </h1>
+
+      <Container className="text-center">
+        <Row className="g-2 mx-auto">
+          <Col className="col">
+            <BillingPolicyCard />
+          </Col>
+          <Col className="justify-content-center text-center mx-auto">
+            <InsurancePolicyCard />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 

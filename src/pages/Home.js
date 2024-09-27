@@ -14,8 +14,8 @@ export default function Home() {
         Your Trusted Family Dentist in Saratoga Springs
       </h1>
 
-      <Container className="text-center" fluid="xs">
-        <Row xs={1} md={2} className="justify-content-xl-center">
+      <Container className="text-center">
+        <Row className="g-2 mx-auto">
           <Col className="col">
             <img
               className="image"
@@ -23,6 +23,7 @@ export default function Home() {
               src={require("./skyview-toga.jpg")}
             />
             <p>PlaceHolder Image</p>
+            <MailingAddress />
           </Col>
           <Col className="justify-content-center text-center mx-auto">
             <HoursCard />
@@ -67,3 +68,19 @@ const HoursCard = () => {
     </Card>
   );
 };
+
+function MailingAddress() {
+  return (
+    <Card className="mx-auto" style={{ width: "18rem", textAlign: "center" }}>
+      <Card.Body>
+        <Card.Text>
+          R. Jamie Green, DDS
+          <br />
+          586 Maple Avenue
+          <br />
+          Saratoga Springs, NY 12866
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
+}
