@@ -6,8 +6,8 @@ import Col from "react-bootstrap/Col";
 export default function Billing() {
   return (
     <div className="mx-auto">
-      <Row className="mx-auto" style={{ marginTop: "2rem" }}>
-        <Col>
+      <Row className="mx-auto" style={{ marginTop: "4rem" }}>
+        <Col style={{ marginBottom: "2rem" }}>
           <BillingPolicyCard />
         </Col>
         <Col>
