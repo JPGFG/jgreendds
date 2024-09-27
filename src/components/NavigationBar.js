@@ -6,7 +6,7 @@ import "./NavigationBar.css";
 
 function NavigationBar() {
   return (
-    <Navbar expand="md" className="bg-body-tertiary">
+    <Navbar expand="md" className="bg-body-tertiary mx-auto">
       <Container className="bar">
         <Navbar.Brand as={Link} to="/">
           Home
